@@ -7,7 +7,7 @@ btnEl.addEventListener('click', handleClick);
 function handleClick(evt) {
   const currentBtn = evt.target;
   bodyEl.style.backgroundColor = getRandomHexColor();
-  spanEl.textContent = getRandomHexColor();
+  spanEl.textContent = bodyEl.style.backgroundColor;
 }
 
 function getRandomHexColor() {
