@@ -15,11 +15,9 @@ btnDestroy.addEventListener('click', handleDestroy);
 function createBoxes(amount) {
   let size = 30;
   let markup = '';
-  let color = '';
 
   for (let i = 0; i < amount; i++) {
-    color = getRandomHexColor();
-    markup += `<div class="box" style="width: ${size}px; height: ${size}px; background-color: ${color};"></div>`;
+    markup += `<div class="box" style="width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()};"></div>`;
     size += 10;
   }
   divCont.innerHTML = markup;
